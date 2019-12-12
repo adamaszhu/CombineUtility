@@ -7,7 +7,7 @@
 
 import CombineRx
 
-extension CombineRx.Publisher {
+public extension CombineRx.Publisher {
     
     /// An empty publisher with the current publisher output and failure.
     static var empty: CombineRx.AnyPublisher<Output, Failure> {
@@ -21,7 +21,7 @@ extension CombineRx.Publisher {
 import Combine
 
 @available(iOS 13.0, *)
-extension Combine.Publisher {
+public extension Combine.Publisher {
     
     /// An empty publisher with the current publisher output and failure.
     static var empty: Combine.AnyPublisher<Output, Failure> {
