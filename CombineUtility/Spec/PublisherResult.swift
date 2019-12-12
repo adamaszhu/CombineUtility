@@ -6,7 +6,7 @@
 
 import Foundation
 import CombineRx
-    
+
 /// PublisherResult records events emitted by a publisher.
 /// - Warning: This class doesn't belong to Combine and need to be implemented manually after migrating to Combine.
 final public class PublisherResult<Output, Failure, Cancellable> {
