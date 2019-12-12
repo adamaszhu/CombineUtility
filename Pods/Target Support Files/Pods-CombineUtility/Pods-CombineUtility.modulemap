@@ -1,6 +1,0 @@
-module Pods_CombineUtility {
-  umbrella header "Pods-CombineUtility-umbrella.h"
-
-  export *
-  module * { export * }
-}
