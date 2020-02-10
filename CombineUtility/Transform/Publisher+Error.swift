@@ -1,4 +1,4 @@
-/// Publisher+Errors.swift
+/// Publisher+Error.swift
 /// CombineUtility
 ///
 /// - author: Adamas

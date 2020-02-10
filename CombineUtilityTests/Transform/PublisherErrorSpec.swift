@@ -1,4 +1,4 @@
-/// PublisherErrorsSpec.swift
+/// PublisherErrorSpec.swift
 /// CombineUtility
 ///
 /// - author: Adamas
@@ -16,7 +16,7 @@ import CombineRx
 #endif
 
 @available(iOS 13.0, *)
-final class PublisherErrorsSpec: QuickSpec {
+final class PublisherErrorSpec: QuickSpec {
     
     override func spec() {
         describe("calls mapError(into)") {
