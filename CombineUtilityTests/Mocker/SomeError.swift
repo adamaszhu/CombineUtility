@@ -5,4 +5,4 @@
 /// - date: 2/12/19
 /// - copyright: 
 
-struct SomeError: Error {}
+struct SomeError: Error, Equatable {}
