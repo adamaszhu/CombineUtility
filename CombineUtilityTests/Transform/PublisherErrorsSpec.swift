@@ -29,5 +29,15 @@ final class PublisherErrorsSpec: QuickSpec {
                 }
             }
         }
+        describe("calls ignoreError()") {
+            context("with an error") {
+                it("returns a publisher without any error") {
+                    let result = Fail<Int, OtherError>(error: OtherError())
+                        .ignoreError()
+                        .test()
+                    expect(result.failure).toEventually(beNil())
+                }
+            }
+        }
     }
 }

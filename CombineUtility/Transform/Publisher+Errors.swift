@@ -15,6 +15,12 @@ public extension CombineRx.Publisher {
         return mapError { _ in error }
             .eraseToAnyPublisher()
     }
+    
+    /// Ignore errors occur in the publisher
+    func ignoreError() -> CombineRx.AnyPublisher<Output, Never> {
+        return self.catch { _ in CombineRx.AnyPublisher<Output, Never>.empty }
+            .eraseToAnyPublisher()
+    }
 }
 
 #if canImport(Combine)
@@ -28,6 +34,12 @@ public extension Combine.Publisher {
     /// - Parameter error: The error to be mapped into.
     func mapError<E>(into error: E) -> Combine.AnyPublisher<Output, E> where E : Error {
         return mapError { _ in error }
+            .eraseToAnyPublisher()
+    }
+    
+    /// Ignore errors occur in the publisher
+    func ignoreError() -> Combine.AnyPublisher<Output, Never> {
+        return self.catch { _ in Combine.AnyPublisher<Output, Never>.empty }
             .eraseToAnyPublisher()
     }
 }

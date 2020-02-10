@@ -23,6 +23,8 @@
 		4280463523C6BFC1000B629A /* Publisher+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280463423C6BFC1000B629A /* Publisher+Errors.swift */; };
 		4280463823C6C74C000B629A /* PublisherErrorsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280463723C6C74C000B629A /* PublisherErrorsSpec.swift */; };
 		4280463A23C7D93E000B629A /* OtherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280463923C7D93E000B629A /* OtherError.swift */; };
+		42C9B62C23F0DA920033CA98 /* PublisherErrorsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280463723C6C74C000B629A /* PublisherErrorsSpec.swift */; };
+		42C9B62D23F0DAE20033CA98 /* OtherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280463923C7D93E000B629A /* OtherError.swift */; };
 		84C0631DE6806F898D75FEF0 /* libPods-CombineRxUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1870474FB297B2DF44BF76 /* libPods-CombineRxUtilityTests.a */; };
 		869483800C5DC2B3122FD03D /* libPods-CombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */; };
 /* End PBXBuildFile section */
@@ -471,8 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C9B62D23F0DAE20033CA98 /* OtherError.swift in Sources */,
 				424F759223A1D661001106CC /* SomeError.swift in Sources */,
 				424F758E23A1D341001106CC /* PublisherTestableSpec.swift in Sources */,
+				42C9B62C23F0DA920033CA98 /* PublisherErrorsSpec.swift in Sources */,
 				424F759923A1D8F8001106CC /* PublisherConstantsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
