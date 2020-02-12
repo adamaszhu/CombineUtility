@@ -27,6 +27,10 @@
 		42C9B62D23F0DAE20033CA98 /* OtherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280463923C7D93E000B629A /* OtherError.swift */; };
 		42C9B62F23F210DD0033CA98 /* Publisher+Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9B62E23F210DD0033CA98 /* Publisher+Nil.swift */; };
 		42C9B63123F219AC0033CA98 /* PublisherNilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9B63023F219AC0033CA98 /* PublisherNilSpec.swift */; };
+		42C9B63A23F3C4D50033CA98 /* Operator+Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9B63923F3C4D50033CA98 /* Operator+Cancellable.swift */; };
+		42C9B63D23F3CC040033CA98 /* OperatorCancellableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9B63C23F3CC040033CA98 /* OperatorCancellableSpec.swift */; };
+		42C9B63E23F3CC0E0033CA98 /* OperatorCancellableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9B63C23F3CC040033CA98 /* OperatorCancellableSpec.swift */; };
+		42C9B64023F3CEEC0033CA98 /* PublisherNilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9B63023F219AC0033CA98 /* PublisherNilSpec.swift */; };
 		84C0631DE6806F898D75FEF0 /* libPods-CombineRxUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1870474FB297B2DF44BF76 /* libPods-CombineRxUtilityTests.a */; };
 		869483800C5DC2B3122FD03D /* libPods-CombineUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */; };
 /* End PBXBuildFile section */
@@ -70,6 +74,8 @@
 		4280463923C7D93E000B629A /* OtherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherError.swift; sourceTree = "<group>"; };
 		42C9B62E23F210DD0033CA98 /* Publisher+Nil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Nil.swift"; sourceTree = "<group>"; };
 		42C9B63023F219AC0033CA98 /* PublisherNilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherNilSpec.swift; sourceTree = "<group>"; };
+		42C9B63923F3C4D50033CA98 /* Operator+Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Cancellable.swift"; sourceTree = "<group>"; };
+		42C9B63C23F3CC040033CA98 /* OperatorCancellableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorCancellableSpec.swift; sourceTree = "<group>"; };
 		54D9D655B7E0F413916572B2 /* Pods-CombineRxUtilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineRxUtilityTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineRxUtilityTests/Pods-CombineRxUtilityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63934E3E7C0A1CD7AFDF945F /* Pods-CombineUtility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineUtility.debug.xcconfig"; path = "Target Support Files/Pods-CombineUtility/Pods-CombineUtility.debug.xcconfig"; sourceTree = "<group>"; };
 		ABF38D827809DBD8038C33DE /* Pods-CombineUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineUtility.release.xcconfig"; path = "Target Support Files/Pods-CombineUtility/Pods-CombineUtility.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 		4224CB9323A1D08300F87932 /* CombineUtility */ = {
 			isa = PBXGroup;
 			children = (
+				42C9B63823F3C49F0033CA98 /* Operator */,
 				4280463323C6BF77000B629A /* Transform */,
 				424F759323A1D793001106CC /* Constants */,
 				424F758523A1D2CD001106CC /* Spec */,
@@ -158,6 +165,7 @@
 		4224CB9E23A1D08300F87932 /* CombineUtilityTests */ = {
 			isa = PBXGroup;
 			children = (
+				42C9B63B23F3CBF10033CA98 /* Operator */,
 				4280463623C6C72B000B629A /* Transform */,
 				424F759623A1D848001106CC /* Constants */,
 				424F758F23A1D630001106CC /* Mocker */,
@@ -233,6 +241,22 @@
 				42C9B63023F219AC0033CA98 /* PublisherNilSpec.swift */,
 			);
 			path = Transform;
+			sourceTree = "<group>";
+		};
+		42C9B63823F3C49F0033CA98 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				42C9B63923F3C4D50033CA98 /* Operator+Cancellable.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		42C9B63B23F3CBF10033CA98 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				42C9B63C23F3CC040033CA98 /* OperatorCancellableSpec.swift */,
+			);
+			path = Operator;
 			sourceTree = "<group>";
 		};
 		4483C0EAE450A8FAE342A529 /* Frameworks */ = {
@@ -458,6 +482,7 @@
 			files = (
 				424F758923A1D2CD001106CC /* Publisher+Testable.swift in Sources */,
 				424F759523A1D7B5001106CC /* Publisher+Constants.swift in Sources */,
+				42C9B63A23F3C4D50033CA98 /* Operator+Cancellable.swift in Sources */,
 				424F758823A1D2CD001106CC /* PublisherResult.swift in Sources */,
 				42C9B62F23F210DD0033CA98 /* Publisher+Nil.swift in Sources */,
 				4280463523C6BFC1000B629A /* Publisher+Error.swift in Sources */,
@@ -470,6 +495,7 @@
 			files = (
 				4280463A23C7D93E000B629A /* OtherError.swift in Sources */,
 				424F759123A1D630001106CC /* SomeError.swift in Sources */,
+				42C9B63D23F3CC040033CA98 /* OperatorCancellableSpec.swift in Sources */,
 				424F758C23A1D317001106CC /* PublisherTestableSpec.swift in Sources */,
 				4280463823C6C74C000B629A /* PublisherErrorSpec.swift in Sources */,
 				424F759823A1D865001106CC /* PublisherConstantsSpec.swift in Sources */,
@@ -483,7 +509,9 @@
 			files = (
 				42C9B62D23F0DAE20033CA98 /* OtherError.swift in Sources */,
 				424F759223A1D661001106CC /* SomeError.swift in Sources */,
+				42C9B64023F3CEEC0033CA98 /* PublisherNilSpec.swift in Sources */,
 				424F758E23A1D341001106CC /* PublisherTestableSpec.swift in Sources */,
+				42C9B63E23F3CC0E0033CA98 /* OperatorCancellableSpec.swift in Sources */,
 				42C9B62C23F0DA920033CA98 /* PublisherErrorSpec.swift in Sources */,
 				424F759923A1D8F8001106CC /* PublisherConstantsSpec.swift in Sources */,
 			);
