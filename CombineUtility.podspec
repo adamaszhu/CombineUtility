@@ -5,7 +5,7 @@ s.ios.deployment_target = '8.0'
 s.name = "CombineUtility"
 s.summary = "CombineUtility provides additional support to Combine and CombineRx."
 s.requires_arc = true
-s.version = "0.5.3"
+s.version = "0.5.4"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 "Leon Nguyen" => "leon.nguyen291@gmail.com" }
