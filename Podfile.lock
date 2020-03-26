@@ -1,25 +1,25 @@
 PODS:
-  - CombineRx (0.5.2):
+  - CombineRx (1.0.0):
     - RxCocoa (~> 5)
     - RxSwift (~> 5)
   - Nimble (8.0.4)
   - Quick (2.2.0)
-  - RxCocoa (5.0.1):
+  - RxCocoa (5.1.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.1):
+  - RxRelay (5.1.0):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
-  - CombineRx (~> 0.5.2)
+  - CombineRx (~> 1.0.0)
   - Nimble
   - Quick
 
 SPEC REPOS:
-  https://github.com/adamaszhu/CombineRxSpecs:
+  https://github.com/adamaszhu/CombineRxSpecs.git:
     - CombineRx
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Nimble
     - Quick
     - RxCocoa
@@ -27,13 +27,13 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
-  CombineRx: 314c83861956dcd43c03b5d1032dfccaf84ac254
+  CombineRx: 1e184e2eb9e6c8897b90e91a6f6ddf384f2f6d4b
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 960c8c078b81dfed8cd03424e34d78e7f008bf2e
+PODFILE CHECKSUM: 83bd6eb8da0adfa900c2e97ca82e3864711a334f
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
