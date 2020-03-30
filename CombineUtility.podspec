@@ -5,7 +5,7 @@ s.ios.deployment_target = '8.0'
 s.name = "CombineUtility"
 s.summary = "CombineUtility provides additional support to Combine and CombineRx."
 s.requires_arc = true
-s.version = "0.5.5"
+s.version = "0.5.6"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Adamas Zhu" => "developer@adamaszhu.com",
 "Leon Nguyen" => "leon.nguyen291@gmail.com" }
@@ -16,6 +16,6 @@ s.source_files = "CombineUtility/**/*.{swift}"
 s.swift_version = "4.2"
 
 s.framework = "Foundation"
-s.dependency 'CombineRx', '~> 1.0.0'
+s.dependency 'CombineRx', '~> 1.1.0'
 
 end
