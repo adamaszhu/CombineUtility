@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '11.0'
+s.ios.deployment_target = '8.0'
 s.name = "CombineUtility"
 s.summary = "CombineUtility provides additional support to Combine and CombineRx."
 s.requires_arc = true
@@ -16,6 +16,6 @@ s.source_files = "CombineUtility/**/*.{swift}"
 s.swift_version = "4.2"
 
 s.framework = "Foundation"
-s.dependency 'CombineRx', '~> 1.0.1'
+s.dependency 'CombineRx', '~> 1.1.0'
 
 end
