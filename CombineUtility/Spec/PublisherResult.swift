@@ -1,17 +1,21 @@
-/// PublisherResult.swift
-/// CombineRx
-///
-/// - author: Adamas Zhu
-/// - date: 22/11/19
-
-import Foundation
-import CombineRx
-
 /// PublisherResult records events emitted by a publisher.
-/// - Warning: This class doesn't belong to Combine and need to be implemented manually after migrating to Combine.
+///
+/// - version: 1.0.0
+/// - date: 18/11/22
+/// - author: Adamas
 final public class PublisherResult<Output, Failure, Cancellable> {
+
+    /// Received outputs
     public internal (set) var outputs: [Output] = []
+
+    /// Detected error
     public internal (set) var failure: Failure? = nil
+
+    /// Whether the publisher has finished or not
     public internal (set) var hasFinished: Bool = false
+
+    /// Cancellable of the subscription
     public internal (set) var cancellable: Cancellable? = nil
 }
+
+import Combine

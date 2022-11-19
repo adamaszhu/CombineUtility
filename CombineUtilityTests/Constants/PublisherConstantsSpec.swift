@@ -1,21 +1,3 @@
-/// PublisherConstantsSpec.swift
-/// CombineUtility
-///
-/// - author: Adamas
-/// - date: 12/12/19
-/// - copyright: Copyright © 2019 Adamas. All rights reserved.
-
-import Nimble
-import Quick
-@testable import CombineUtility
-
-#if COMBINE
-import Combine
-#else
-import CombineRx
-#endif
-
-@available(iOS 13.0, *)
 final class PublisherConstantsSpec: QuickSpec {
     
     override func spec() {
@@ -30,3 +12,8 @@ final class PublisherConstantsSpec: QuickSpec {
         }
     }
 }
+
+import Nimble
+import Quick
+import Combine
+@testable import CombineUtility
