@@ -1,33 +1,15 @@
-/// Publisher+Constants.swift
-/// CombineUtility
+/// Publisher constants
 ///
+/// - version: 1.0.0
+/// - date: 18/11/22
 /// - author: Adamas
-/// - date: 12/12/19
-/// - copyright: Copyright © 2019 Adamas. All rights reserved.
-
-import CombineRx
-
-public extension CombineRx.Publisher {
+public extension Publisher {
     
     /// An empty publisher with the current publisher output and failure.
-    static var empty: CombineRx.AnyPublisher<Output, Failure> {
-        return CombineRx.Empty<Output, Failure>()
+    static var empty: AnyPublisher<Output, Failure> {
+        Empty<Output, Failure>()
             .eraseToAnyPublisher()
     }
 }
-
-#if canImport(Combine)
 
 import Combine
-
-@available(iOS 13.0, *)
-public extension Combine.Publisher {
-    
-    /// An empty publisher with the current publisher output and failure.
-    static var empty: Combine.AnyPublisher<Output, Failure> {
-        return Combine.Empty<Output, Failure>()
-            .eraseToAnyPublisher()
-    }
-}
-
-#endif

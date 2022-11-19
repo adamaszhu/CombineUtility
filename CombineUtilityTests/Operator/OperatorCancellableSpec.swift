@@ -1,21 +1,3 @@
-/// OperatorCancellableSpec.swift
-/// CombineUtility
-///
-/// - author: Adamas
-/// - date: 12/2/20
-/// - copyright: Copyright © 2020 Adamas. All rights reserved.
-
-import Nimble
-import Quick
-@testable import CombineUtility
-
-#if COMBINE
-import Combine
-#else
-import CombineRx
-#endif
-
-@available(iOS 13.0, *)
 final class OperatorCancellableSpec: QuickSpec {
     
     override func spec() {
@@ -32,3 +14,8 @@ final class OperatorCancellableSpec: QuickSpec {
         }
     }
 }
+
+import Nimble
+import Quick
+import Combine
+@testable import CombineUtility
