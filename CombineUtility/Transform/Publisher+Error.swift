@@ -1,47 +1,24 @@
-/// Publisher+Error.swift
-/// CombineUtility
+/// Error related conversion.
 ///
+/// - version: 1.0.0
+/// - date: 18/11/22
 /// - author: Adamas
-/// - date: 9/1/20
-/// - copyright: Copyright © 2020 Adamas. All rights reserved.
-
-import CombineRx
-
-public extension CombineRx.Publisher {
+public extension Publisher {
     
     /// Map any error into a specific error.
-    /// - Parameter error: The error to be mapped into.
-    func mapError<E>(into error: E) -> CombineRx.AnyPublisher<Output, E> where E : Error {
-        return mapError { _ in error }
+    /// - Parameter error: Default error case if the detected error has a different error type.
+    /// - Returns: The publisher with the new error type.
+    func mapError<E>(into error: E) -> AnyPublisher<Output, E> where E : Error {
+        mapError { ($0 as? E) ?? error }
             .eraseToAnyPublisher()
     }
     
-    /// Ignore errors occur in the publisher
-    func ignoreError() -> CombineRx.AnyPublisher<Output, Never> {
-        return self.catch { _ in CombineRx.AnyPublisher<Output, Never>.empty }
+    /// Ignore errors occur in the publisher.
+    /// - Returns: The publisher with no error.
+    func ignoreError() -> AnyPublisher<Output, Never> {
+        self.catch { _ in AnyPublisher<Output, Never>.empty }
             .eraseToAnyPublisher()
     }
 }
-
-#if canImport(Combine)
 
 import Combine
-
-@available(iOS 13.0, *)
-public extension Combine.Publisher {
-    
-    /// Map any error into a specific error.
-    /// - Parameter error: The error to be mapped into.
-    func mapError<E>(into error: E) -> Combine.AnyPublisher<Output, E> where E : Error {
-        return mapError { _ in error }
-            .eraseToAnyPublisher()
-    }
-    
-    /// Ignore errors occur in the publisher
-    func ignoreError() -> Combine.AnyPublisher<Output, Never> {
-        return self.catch { _ in Combine.AnyPublisher<Output, Never>.empty }
-            .eraseToAnyPublisher()
-    }
-}
-
-#endif

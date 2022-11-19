@@ -1,21 +1,3 @@
-/// PublisherErrorSpec.swift
-/// CombineUtility
-///
-/// - author: Adamas
-/// - date: 9/1/20
-/// - copyright: Copyright © 2020 Adamas. All rights reserved.
-
-import Nimble
-import Quick
-@testable import CombineUtility
-
-#if COMBINE
-import Combine
-#else
-import CombineRx
-#endif
-
-@available(iOS 13.0, *)
 final class PublisherErrorSpec: QuickSpec {
     
     override func spec() {
@@ -41,3 +23,8 @@ final class PublisherErrorSpec: QuickSpec {
         }
     }
 }
+
+import Nimble
+import Quick
+import Combine
+@testable import CombineUtility
