@@ -3,7 +3,7 @@
 /// - version: 1.0.0
 /// - date: 18/11/22
 /// - author: Adamas
-final public class PublisherResult<Output, Failure, Cancellable> {
+final public class PublisherResult<Output, Failure> {
 
     /// Received outputs
     public internal (set) var outputs: [Output] = []
@@ -15,7 +15,7 @@ final public class PublisherResult<Output, Failure, Cancellable> {
     public internal (set) var hasFinished: Bool = false
 
     /// Cancellable of the subscription
-    public internal (set) var cancellable: Cancellable? = nil
+    public internal (set) var cancellable: AnyCancellable? = nil
 }
 
 import Combine

@@ -8,8 +8,8 @@ public extension Publisher {
     /// Sink a publisher and record any result in `PublisherResult`
     ///
     /// - Returns: The object that contains any events happening in the result
-    func test() -> PublisherResult<Output, Failure, Cancellable> {
-        let result = PublisherResult<Output, Failure, Cancellable>()
+    func test() -> PublisherResult<Output, Failure> {
+        let result = PublisherResult<Output, Failure>()
         result.cancellable = sink(receiveFinished: {
             result.hasFinished = true
         }, receiveFailure: { failure in
