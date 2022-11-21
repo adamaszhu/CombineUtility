@@ -16,6 +16,9 @@ final public class PublisherResult<Output, Failure> {
 
     /// Cancellable of the subscription
     public internal (set) var cancellable: AnyCancellable? = nil
+
+    /// Initialize the result
+    public init() {}
 }
 
 import Combine
