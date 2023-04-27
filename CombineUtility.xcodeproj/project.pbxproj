@@ -38,12 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4224CB9123A1D08300F87932 /* CombineUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4224CB9523A1D08300F87932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4224CB9A23A1D08300F87932 /* CombineUtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineUtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4224CBA123A1D08300F87932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4224CBB523A1D0EA00F87932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		424F758623A1D2CD001106CC /* PublisherResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherResult.swift; sourceTree = "<group>"; };
 		424F758723A1D2CD001106CC /* Publisher+Testable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Testable.swift"; sourceTree = "<group>"; };
 		424F758B23A1D317001106CC /* PublisherTestableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherTestableSpec.swift; sourceTree = "<group>"; };
@@ -59,8 +57,6 @@
 		42C9B63023F219AC0033CA98 /* PublisherNilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherNilSpec.swift; sourceTree = "<group>"; };
 		42C9B63923F3C4D50033CA98 /* Operator+Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Cancellable.swift"; sourceTree = "<group>"; };
 		42C9B63C23F3CC040033CA98 /* OperatorCancellableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorCancellableSpec.swift; sourceTree = "<group>"; };
-		C485F1BF5EEA63CA4C8B302A /* libPods-CombineUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineUtility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC1870474FB297B2DF44BF76 /* libPods-CombineRxUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CombineRxUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +85,7 @@
 			children = (
 				4224CB9323A1D08300F87932 /* CombineUtility */,
 				4224CB9E23A1D08300F87932 /* CombineUtilityTests */,
-				4224CBB223A1D0EA00F87932 /* CombineRxUtilityTests */,
 				4224CB9223A1D08300F87932 /* Products */,
-				4483C0EAE450A8FAE342A529 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,14 +123,6 @@
 				4224CBA123A1D08300F87932 /* Info.plist */,
 			);
 			path = CombineUtilityTests;
-			sourceTree = "<group>";
-		};
-		4224CBB223A1D0EA00F87932 /* CombineRxUtilityTests */ = {
-			isa = PBXGroup;
-			children = (
-				4224CBB523A1D0EA00F87932 /* Info.plist */,
-			);
-			path = CombineRxUtilityTests;
 			sourceTree = "<group>";
 		};
 		424F758523A1D2CD001106CC /* Spec */ = {
@@ -229,16 +215,6 @@
 				42C9B63C23F3CC040033CA98 /* OperatorCancellableSpec.swift */,
 			);
 			path = Operator;
-			sourceTree = "<group>";
-		};
-		4483C0EAE450A8FAE342A529 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C485F1BF5EEA63CA4C8B302A /* libPods-CombineUtility.a */,
-				054531E4C0C65ADCA3A93543 /* libPods-CombineUtilityTests.a */,
-				CC1870474FB297B2DF44BF76 /* libPods-CombineRxUtilityTests.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
