@@ -49,16 +49,6 @@
                ReferencedContainer = "container:CombineUtility.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4224CBB023A1D0EA00F87932"
-               BuildableName = "CombineRxUtilityTests.xctest"
-               BlueprintName = "CombineRxUtilityTests"
-               ReferencedContainer = "container:CombineUtility.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
