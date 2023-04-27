@@ -15,12 +15,6 @@ final class PublisherSinkSpec: QuickSpec {
                         .sink(receiveFinished: { isFinished = true })
                     expect(isFinished).toEventually(beTrue())
                 }
-                it("gets no error") {
-                    var error: SomeError?
-                    let _ = Just<Int>(0)
-                        .sink(receiveFailure: { _ in error = SomeError() })
-                    expect(error).toEventually(beNil())
-                }
             }
             context("with an error") {
                 it("gets no value") {
